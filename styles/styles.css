@@ -1,6 +1,14 @@
 /* Fonts: Lets Import */
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
+
+/* *{
+  border: 2px dashed red;
+}
+
+body{
+  border: 4px dashed green;
+} */
 /* Lets Specify Normal Font */
 .quicksand-normal {
   font-family: "Quicksand", serif;
@@ -46,18 +54,21 @@ main, html{
 /* Text Orange */
 .text-orange{
     color: orange;
+    font-weight: 800;
     
   }
   
   /* Text SkyBlue */
   .text-sky-blue{
     color: skyblue;
+    font-weight: 800;
     
   }
 
   /* Test Light Blue */
   .text-light-blue{
     color: #05D4DF;
+    font-weight: 800;
     
   }
 
@@ -108,6 +119,12 @@ main, html{
 main{
   max-width: 1160px;
   margin: 0 35px;
+}
+footer{
+  max-width: 1160px;
+  /* margin-right: 60px; */
+  /* margin: 0 px; */
+  
 }
 
 
@@ -171,7 +188,7 @@ main{
   }
 
   .toggle-menu{
-    position: absolute;
+    /* position: relative; */
     width: 30px;
     height: 100%;
     z-index: 3;
@@ -198,6 +215,21 @@ main{
     transform: rotate(45deg);
     width: 30px;
   }
+/* marquee related style */
+  .top-marquee{
+    /* font-family: Arial, sans-serif; */
+    line-height: 1.5;
+    background-color: #FFF;
+    font-size: 16px;
+    color: #ed8f14;
+}
+
+marquee {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .1);
+    border: 1px solid rgba(0, 0, 0, .15);
+    background-color: #f5b4b4;
+    padding: 2px; 
+}
 
 
 
@@ -267,8 +299,18 @@ main{
   text-align: center;
 }
 
+.carriculam-gradient1{
+  background: linear-gradient(#FFFFFF, #f4cb85)
+}
+.carriculam-gradient2{
+  background: linear-gradient(#FFFFFF, #96dbf4)
+}
+.carriculam-gradient3{
+  background: linear-gradient(#FFFFFF, #e78383)
+}
+
 .carriculam-card{
-  border: 1px solid #FF900E;
+  /* border: 1px solid #FF900E; */
   width:  367px;
   height: 476px;
   border-radius: 8px;
@@ -299,6 +341,24 @@ main{
 
 /* Stories Section Style */
 
+.stories{
+  /* background: linear-gradient(#FFFFFF, #f4cb85), url('../assets/bg.png') no-repeat center center / cover; */
+  /* background: linear-gradient(#FFFFFF, #f4cb85), url('../assets/bg2.png') no-repeat center center / cover; */
+  
+  background-image:
+  url('../assets/bg.png'),
+  linear-gradient(#FFFFFF, #f9dfb3);
+
+
+  height: 100vh; 
+  margin: 0;
+  /* background-image: url('../assets/bg.png');
+  background-image: linear-gradient(#FFFFFF, #FEAB18); */
+  /* padding-bottom: 80px;
+  margin-bottom: -25px; */
+
+}
+
 .stories-title{
   font-size: 3rem;
   text-align: center;
@@ -312,17 +372,20 @@ main{
   margin-bottom: 30px;
 }
 .stories-card1{
-  border: 1px solid #FF900E;
+  /* border: 1px solid #FF900E; */
   grid-row: 1 / 4;
   border-radius: 10px;
   align-items: center;
   justify-content: center;
   text-align: left;
-  margin-bottom: 30px;
+  margin-bottom: 100px;
+  background-color: white;
+  width: 540px;
+  padding-left: 10px;
 }
 
 .stories-card{
-  border: 1px solid #FF900E;
+  /* border: 1px solid #FF900E; */
   /* width:  367px; */
   /* height: 476px; */
   border-radius: 8px;
@@ -331,6 +394,39 @@ main{
   text-align: left;
   /* margin-bottom: 30px; */
   margin: 0, 30px;
+  padding-bottom: 30px;
+  background-color: white;
+  width: 280px;
+  
+}
+
+.stories-img{
+  width: 270px;
+
+  margin-bottom: -18px;
+  border-radius: 10px;
+
+}
+
+.stories-img1{
+  width: 540px;
+
+  margin-bottom: -18px;
+  border-radius: 10px;
+  
+
+}
+
+
+.btn-stories{
+  width: 180px;
+  height: 50px;
+  font-size: 1rem;
+  background-color: #3CD8E8 ;
+  border: none;
+  color: white;
+  border-radius: 30px;
+  margin-top: -30px;
   
   
 }
@@ -342,30 +438,112 @@ main{
   gap: 20px;
 
 }
-      
+
+/* Styles for footer */
+footer{
+  background-color: #01ACFD ;
+  margin-right: 10px;
+  margin-left: 35px;
+}
+
+.footer-middle{
+  display: flex;
+
+  flex-direction: column;
+  max-width: 400px;
+  padding: 20px;
+  
+  /* text-align: left; */
+
+}
+/* .footer-middle.ul{
+  text-align: left;
+} */
+.footer-right
+{
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  padding: 20px;
+
+}
+
+
+.footer-left{
+  flex-direction: column;
+  max-width: 400px;
+  padding: 20px;
+
+}
+
+.nav-item-footer{
+  list-style: none;
+  padding: 10px;
+
+}
+.footer-container{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 10px;
+  text-align: left;
+  margin-bottom: 30px;
+  color: white;
+  justify-content: space-around;
+}
+ 
+.nav-links-footer{
+
+  text-align: left;
+}
+
+.footer-logo{
+  
+  max-width: 62px;
+  max-height: 62px;
+  padding-top: 20px;
+  padding-right: 20px;
+ 
+}
+   
 
 
 /* Media Related Design/Responsive Design */
-@media (max-width: 992px) {
+@media screen and (max-width: 576px) {
   .hamburger,
-  .toggle-menu{
+  .toggle-menu,
+  .carriculam{
      display: block; 
   }
   .banner{
     flex-direction: column-reverse;
     
+    
   }
 
   .banner-content{
     text-align: center;
+    justify-content: center;
   }
 
-  /* .banner-content{
+  .carriculam-container,
+  .footer-container {
     grid-template-columns: 1fr;
+    gap: 10px;
 
-  } */
+  } 
 
-  .brand, .btn-contact{
+  .stories-container{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    justify-items: center;
+  }
+/* Hiding for mobile devices */
+  .brand, 
+  .btn-contact,
+  .btn-more,
+  .stories-card1,
+  .nav-links,
+  marquee{
     display: none;
   }
   .nav-links{
@@ -374,11 +552,40 @@ main{
     align-items: center;
     position: fixed;
     top: 0;
-    right: -200px;
+    /* right: -200px; */
     /* background: orange; */
-    width: 300px;
+    /* width: 300px; */
     height: 100%;
     padding-top: 65px;
+  }
+
+  .banner-image{
+    width: 100%
+  }
+
+  .banner-content{
+    width: 100%;
+  }
+
+  .carriculam-container{
+    width: 100%;
+    
+  }
+
+  .carriculam-card
+  {
+    width: 100%;
+  }
+  .stories-card{
+    width 100%;
+
+  }
+
+  .navbar {
+    max-width: 576px;
+    margin: 0 auto;
+    border: 1px solid red;
+
   }
   .nav-link li {
     width: 100%;
@@ -389,6 +596,32 @@ main{
     font-size: 24px;
     /* box-shadow:  */
   }
+
+  .stories-img
+  {
+
+    width: 170px;
+  }
+  .footer-container{
+    width: 100%;
+  }
+  .view-all{
+    
+    align-items: center;
+  }
+  
+.btn-stories{
+  width: 90px;
+  height: 25px;
+  font-size: 0.5rem;
+  background-color: #3CD8E8 ;
+  border: none;
+  color: white;
+  border-radius: 30px;
+  margin-top: -30px;
+  
+  
+}
 
 
 }

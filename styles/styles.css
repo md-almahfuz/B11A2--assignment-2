@@ -1,6 +1,17 @@
+ 
+/* 
+File Name: styles.css
+Author: Mohammad Al Mahfuz
+Email: almahfuz@gmail.com
+Date: 22/01/2025
+Description: Homepage for School site (css file)  */
+
+
+
 /* Fonts: Lets Import */
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
+/* Ingor below just for troubleshoot responsive */
 /* 
 *{
   border: 2px dashed red;
@@ -606,7 +617,8 @@ footer{
   .navbar {
     max-width: 576px;
     margin: 0 auto;
-    border: 1px solid red;
+    /* border: 1px solid red; */
+    border-bottom: 2px solid orange;
 
   }
   .nav-link li {
